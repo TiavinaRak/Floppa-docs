@@ -42,29 +42,10 @@ Architecture en couches par domaine (`seller`, `product`, `offer`, `review`, `bu
 
 La persistance se choisit au lancement : `-Dpersistence=inmemory` (défaut) ou `-Dpersistence=mongo`.
 
-## Qualité, sécurité et monitoring
-
-### Analyse de code (Codacy)
-![Codacy](images/tp4-analyse-summary.png)
-
-### Analyse de sécurité (Snyk)
-![Snyk](images/tp4-snyk-summary.png)
-
-### Monitoring d'erreurs (Sentry)
-![Sentry](images/tp4-monitoring-summary.png)
-
-### Gestion de projet (GitHub Projects)
-![GitHub Project](images/tp4-project.png)
-
-<!-- IMAGE (optionnelle) : capture d'un run réussi du pipeline GitHub Actions (onglet Actions) -->
-
 ## Mes tâches
 
-<!-- À ajuster : garde seulement ce que tu as réalisé toi-même -->
-- Implémentation de fonctionnalités de bout en bout (ressource, service, domaine, persistance) : avis sur les vendeurs, favoris acheteurs.
-- Mise en place du **pattern Repository** avec deux implémentations (InMemory et MongoDB via Morphia).
-- Gestion des erreurs centralisée avec des `ExceptionMapper` (400, 403, 404, 409…).
-- Écriture de tests unitaires (Mockito), d'intégration (RestAssured) et de persistance (Testcontainers).
+- Implémentations des fonctionnalités liées aux produits
+- Écriture de tests unitaires (Mockito) et d'intégrations des classes liées à Product.
 - Configuration du pipeline CI/CD : build, tests, Spotless, publication de l'image Docker sur GHCR, Codacy et Snyk.
 - Rédaction des user stories, issues et revues de pull requests.
 
@@ -80,4 +61,4 @@ La persistance se choisit au lancement : `-Dpersistence=inmemory` (défaut) ou `
 
 ## Code source
 
-Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval). Il est disponible sur demande.
+Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval).
